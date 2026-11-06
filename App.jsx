@@ -1,20 +1,14 @@
 import React from 'react';
-
-function App() {
-  const handleClick = () => {
+function App(){
+  const handleClick=()=>{
     console.log('Button clicked!');
   };
-
-  return (
+  return(
     <div className="app-container">
-      <h1>JSX Keyword Replacement Challenge</h1>
-
-      <form onSubmit={(e) => e.preventDefault()}>
-        
+      <h1 className="heading">JSX Keyword Replacement Challenge</h1>
+      <form onSubmit={(e)=>e.preventDefault()}>
         <label htmlFor="username" className="label-style">Username:</label>
         <input id="username" type="text" />
-
-        
         <button type="submit" onClick={handleClick} className="submit-btn">
           Submit
         </button>
@@ -22,5 +16,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
